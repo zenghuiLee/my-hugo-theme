@@ -9,6 +9,11 @@
     <i class="fa fa-twitter"></i>
   </a>
   {{ end }}
+  {{ with .Site.Params.weibo }}
+  <a href="https://weibo.com/u/{{ . }}" target="_blank">
+    <i class="fa fa-weibo"></i>
+  </a>
+  {{ end }}
   {{ with .Site.Params.instagram }}
   <a href="https://instagram.com/{{ . }}" target="_blank">
     <i class="fa fa-instagram"></i>
